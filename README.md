@@ -1,2 +1,8 @@
 # NBAstat
 Fun with nba stat ~
+
+Ever since NBA introduced advanced data to track player on-court movement, there have been a lot of interesting blogs/news articles to show how data could improve the understanding (or destroy your intuition) of the game. Reading them is a lot of fun. Here is one example. The newly introduce metric called KOBE measures how difficult a shot is. A more recent article on http://fivethirtyeight.com/ praises a player to new high using data science (which is arguably more convincing at the first glance). A simple logistic regression is used to predict an outcome (made or not) of a shot based on the shot distance, shot clock remaining and distance to closest defender. Whether the correlation is strong enough to give a reliable prediction is not given. However, the result is somewhat people who have followed NBA would expect. Curry, amongst Durant, Korver and DeAndre Jordan, is the most efficient shooter in NBA.
+
+While the regression is quite easy to formulate, getting and cleaning the data is not so straightforward. None of the articles I found online (including the above) gives a direct link to the data, or even the details how to get them from nba.com. Interested in doing some interesting analysis myself, I decided to make such a data frame. Here is an article about how to scrape data from a website, and I followed it to get the url. Here I get a list of player ID and their names. Data from 2014-2015 is collected from each player in that list and then combined into a single cvs file. The code is published here. And if you don't want to run the script but just want to play with the data, I included the cvs file as well. The file size is about 100 MB and has more than 680,000 shot attemps.
+
+Enjoy!
